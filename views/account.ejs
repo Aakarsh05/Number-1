@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,300&family=Merriweather&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Redressed&family=Sacramento&family=Tapestry&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="images/logo-Chef.png" alt="logo" width="125px">
+         </div>
+            <nav>
+             <ul id="MenuItem">
+                <li><a href="/">Home</a></li>
+                 <li><a href="/Product">Items</a></li>
+                 <li><a href="/Chef">Our Chefs</a></li>
+                 <li><a href="#">Contact</a></li>
+                 <li><a href="/account">Account</a></li>
+             </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="cart">
+            <img src="images/menu.png" class="menu" alt="menu" onclick="menuToggle()">
+        </div>
+        </div>
+
+
+    <div class="small-container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/pic-1.png" alt="images">
+            </div>
+            <div class="col-2"> 
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+                    <!-- <div class="social-icons">
+                        <img src="images/fb.png">
+                        <img src="images/tw.png">
+                        <img src="images/gp.png">
+                    </div> -->
+                    <form id="Login" class="input-group" action="/account" method="post">
+                        <input type="text" class="input-feild" placeholder="User-ID" name="User_ID" required>
+                        <input type="password" class="input-feild" placeholder="******" name="passKey" required>
+                        <p class="error"><%= report1 %></p>
+                        <input type="checkbox" class="check-box" ><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    <form id="register" class="input-group" action="/register" method="post">
+                        <input type="text" class="input-feild" placeholder="User-Id" name="user" required>
+                        <input type="email" class="input-feild" placeholder="Email-Id" name="email" required>
+                        <input type="password" class="input-feild" placeholder="******" name="passKey" required>
+                        <input type="checkbox" class="check-box" required><span>I agree to the terms and conditions.</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!-- Footer -->
+
+<div class="footer" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-Chef.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, magnam!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Aakarsh Vatsraj</p>
+    </div>
+</div>
+
+<script>
+    let manuBtn=document.getElementById("MenuItem");
+
+    manuBtn.style.maxHeight="0px";
+    function menuToggle()
+    {
+        if(manuBtn.style.maxHeight === "0px")
+        {
+            manuBtn.style.maxHeight="200px";
+        }
+        else
+        {
+            manuBtn.style.maxHeight="0px";
+        }
+    }
+
+
+
+    // JS for Login
+
+    var x=document.getElementById("Login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+       function register()
+        {
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login()
+        {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:175,
+    duration:1000,
+  });
+</script>
+</body>
+</html>

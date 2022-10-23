@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,300&family=Merriweather&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Redressed&family=Sacramento&family=Tapestry&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="images/logo-chef.png" alt="logo" width="125px">
+         </div>
+            <nav>
+             <ul id="MenuItem">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Product">Items</a></li>
+                <li><a href="/Chef">Our Chefs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/account">Account</a></li>
+             </ul>
+            </nav>
+           <a href="/Cart"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
+            <img src="images/menu.png" class="menu" alt="menu" onclick="menuToggle()">
+        </div>
+        </div>
+
+
+        <div class="small-container"  data-aos="fade-up">
+
+            <div class="row row-2">
+                <h2 class="title">Meet Our Chefs</h2>
+            </div>
+        
+            <div class="row">
+                <div class="col-4">
+                    <img src="Chef-img/abhishekhgupta.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/amitgera.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/anilkhurana.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/hemant.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="row">
+                <div class="col-4">
+                    <img src="Chef-img/Kelvin.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/madhu.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/parvinderbali.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                 
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/paulkinny.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        
+            <div class="row">
+                <div class="col-4">
+                    <img src="Chef-img/pinakiswarnakar.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/rajbirsingh.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                  
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/subir.jpg" alt="Products class="Chef"
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                   
+                </div>
+                <div class="col-4">
+                    <img src="Chef-img/sushanta.jpg" alt="Products" class="Chef">
+                    <h4>Lorem, ipsum.</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594;</span>
+            </div>
+        </div>
+        
+
+
+    <!---FOOTER-->
+
+<%- include("footer");-%>
+
+<script>
+    let manuBtn=document.getElementById("MenuItem");
+
+    manuBtn.style.maxHeight="0px";
+    function menuToggle()
+    {
+        if(manuBtn.style.maxHeight === "0px")
+        {
+            manuBtn.style.maxHeight="200px";
+        }
+        else
+        {
+            manuBtn.style.maxHeight="0px";
+        }
+    }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:175,
+    duration:1000,
+  });
+</script>
+</body>
+</html>

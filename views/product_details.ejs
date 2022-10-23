@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,300&family=Merriweather&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Redressed&family=Sacramento&family=Tapestry&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="images/logo-Chef.png" alt="logo" width="125px">
+         </div>
+            <nav>
+             <ul id="MenuItem">
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Product">Products</a></li>
+                <li><a href="/Chef">Our Chefs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/account">Account</a></li>
+             </ul>
+            </nav>
+            <a href="/Cart"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
+            <img src="images/menu.png" class="menu" alt="menu" onclick="menuToggle()">
+        </div>
+    </div>
+
+
+
+    <!-- SINGLE PRODUCT DETAILS -->
+    <div data-aos="fade-down">
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/pic-2.jpg" width="100%" id="product_img">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/pic-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/pic-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/pic-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/pic-2.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / Items</p>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h4>$50.00</h4>
+                <!-- <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select> -->
+                <input type="number" value="1">
+                <form action="/Cart" method="post">
+                 <button type="submit" class="btn">Add to cart</button>
+                </form>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloremque.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- TITLE -->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Releated Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+<div class="small-container">
+
+    <div class="row">
+        <div class="col-4">
+            <img src="images/tomato tart with chicken pea crumbles.jpg" alt="Products">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/retro trifle.jpg" alt="Products">
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <p>$56.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Spring-Risotto-with-Asparagus-an.jpg" alt="Products">
+            <h4>Lorem ipsum dolor sit.</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <p>$60.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg" alt="Products">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+</div>
+
+<!---FOOTER-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-Chef.png" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, autem?</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Aakarsh Vatsraj</p>
+    </div>
+</div>
+
+<script>
+    let manuBtn=document.getElementById("MenuItem");
+
+    manuBtn.style.maxHeight="0px";
+    function menuToggle()
+    {
+        if(manuBtn.style.maxHeight === "0px")
+        {
+            manuBtn.style.maxHeight="200px";
+        }
+        else
+        {
+            manuBtn.style.maxHeight="0px";
+        }
+    }
+</script>
+<!-- 
+Js Code for Changing the image on clicking on it. -->
+
+<script>
+    var productImg = document.getElementById("product_img");
+    var smallImg =document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick =function()
+    {
+        productImg.src=smallImg[0].src;
+    }
+    smallImg[1].onclick =function()
+    {
+        productImg.src=smallImg[1].src;
+    }
+    smallImg[2].onclick =function()
+    {
+        productImg.src=smallImg[2].src;
+    }
+    smallImg[3].onclick =function()
+    {
+        productImg.src=smallImg[3].src;
+    }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

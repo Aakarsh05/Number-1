@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,300&family=Merriweather&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Redressed&family=Sacramento&family=Tapestry&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+         <div class="logo">
+             <img src="/images/logo-Chef.png" alt="logo" width="125px">
+         </div>
+            <nav>
+             <ul id="MenuItem">
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Product">Products</a></li>
+                <li><a href="/Chef">Our Chefs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/account">Account</a></li>
+             </ul>
+            </nav>
+            <img src="/images/cart.png" width="30px" height="30px" alt="cart">
+            <img src="/images/menu.png" class="menu" alt="menu" onclick="menuToggle()">
+        </div>
+    </div>
+
+
+<!-- cart items Details -->
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <% items.forEach(function(image) { %>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="data:image/<%=image.img.contentType%>;base64,
+                    <%=image.img.data.toString('base64')%>" alt="">
+                    <div>
+                        <p><%= image.name %></p>
+                        <small>$50.00</small>
+                        <br>
+                        <a href=""> Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <% }) %>
+        <!-- <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/images/pic-2.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum</p>
+                        <small>$35.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/images/pic-5.jpg" alt="">
+                    <div>
+                        <p>Lorem ipsum</p>
+                        <small>$55.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.0</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$35.0</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$235.0</td>
+            </tr> -->
+        </table>
+    </div>
+</div>
+    
+
+<!---FOOTER-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="/images/play-store.png" alt="">
+                    <img src="/images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="/images/logo-Chef.png" alt="">
+                <p>Our Purpose is sustainabilty Make the pleasure and Benefits of Sports Accessiable to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Aakarsh Vatsraj</p>
+    </div>
+</div>
+
+<script>
+    let manuBtn=document.getElementById("MenuItem");
+
+    manuBtn.style.maxHeight="0px";
+    function menuToggle()
+    {
+        if(manuBtn.style.maxHeight === "0px")
+        {
+            manuBtn.style.maxHeight="200px";
+        }
+        else
+        {
+            manuBtn.style.maxHeight="0px";
+        }
+    }
+</script>
+
+</body>
+</html>
